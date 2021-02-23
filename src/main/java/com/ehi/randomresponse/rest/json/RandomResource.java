@@ -21,7 +21,7 @@ public class RandomResource {
     @GET
     public Set<Stuff> list() {
         Set<Stuff> stuff = Collections.newSetFromMap(Collections.synchronizedMap(new LinkedHashMap<>()));
-        createRandomStuff(stuff, RandomUtils.nextInt(0, 20));
+        createRandomStuff(stuff, RandomUtils.nextInt(0, 50));
         return stuff;
     }
 
